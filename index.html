@@ -11,104 +11,124 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <figure>
-            <img src="" alt="Erick Pérez" />
-        </figure>
-        <nav>
-            <ol>
-                <li>
-                    <a href="#portafolio">Portafolio</a>
-                </li>
-                <li>
-                    <a href="#experiencia">Experiencia</a>
-                </li>
-                <li>
-                    <a href="#contacto">Trabajemos juntos</a>
-                </li>
-            </ol>
-        </nav>
+    <header class="header">
+        <div>
+            <figure class="logo">
+                <img src="" alt="Erick Pérez" />
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#eventos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contacto">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
     </header>
-    <section>
+    <section class="hero">
         <h1>
             ¡Hola soy <span>Erick Pérez</span>! <br> Desarrollador <span>PHP</span> con pasión <br> por el nuevo <span>conocimiento</span>.
         </h1>
-        <figure>
-            <img src="" alt="Me at work!s" />
+        <figure class="hero-imageContainer">
+            <img class="hero-image" src="" alt="Me at work!" />
         </figure>
     </section>
-    <section id="portafolio">
+    <section id="portafolio" class="portfolio">
         <h2>
             Portafolio (Proyectos Destacados)
         </h2>
-        <article>
-            <h3>Revista Espejo</h3>
-            <h6>Wordpress</h6>
-            <p><small><strong>Fecha</strong>: 01/11/2016</small></p>
-            <p><small><strong>Puedes verlo en</strong>: <a href="https://revistaespejo.com" target="_blank">revistaespejo.com</a></small></p>
-            <p>Revista Espejo es un periódico dígital fundado en la ciudad de Culiacán, Sinaloa, México. La misión que se impone Revista Espejo es hacer periodismo profesional, para colaborar en la compleja tarea de crear ciudadanos. Donde se invita a los lectores a la reflexión individual y colectiva.</p>
+        <article class="project">
+            <h3 class="project-title">Revista Espejo</h3>
+            <h6 class="project-course">Wordpress</h6>
+            <p class="project-date"><small><strong>Fecha</strong>: 01/11/2016</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en</strong>: <a href="https://revistaespejo.com" target="_blank">revistaespejo.com</a></small></p>
+            <p class="project-description">Revista Espejo es un periódico dígital fundado en la ciudad de Culiacán, Sinaloa, México. La misión que se impone Revista Espejo es hacer periodismo profesional, para colaborar en la compleja tarea de crear ciudadanos. Donde se invita a los lectores a la reflexión individual y colectiva.</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="./images/proyectos/revistaespejo.png" alt="Revista Espejo">
+            </figure>
         </article>
-        <article>
-            <h3>Fullcolor</h3>
-            <h6>Codeigniter / Bootstrap / JQuery</h6>
-            <p><small><strong>Fecha</strong>: 01/04/2017</small></p>
-            <p><small><strong>Puedes verlo en</strong>: <a href="https://fullcolor.mx" target="_blank">fullcolor.mx</a></small></p>
-            <p>Landing Page empresarial de casa productora de TVP, utilizada como portafolio de la empresa y desarrollada utilizando Bootstrap y JQuery.</p>
+        <article class="project">
+            <h3 class="project-title">Fullcolor</h3>
+            <h6 class="project-course">Codeigniter / Bootstrap / JQuery</h6>
+            <p class="project-date"><small><strong>Fecha</strong>: 01/04/2017</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en</strong>: <a href="https://fullcolor.mx" target="_blank">fullcolor.mx</a></small></p>
+            <p class="project-description">Landing Page empresarial de casa productora de TVP, utilizada como portafolio de la empresa y desarrollada utilizando Bootstrap y JQuery.</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="./images/proyectos/fullcolor.png" alt="Fullcolor">
+            </figure>
         </article>
-        <article>
-            <h3>Macasa</h3>
-            <h6>Codeigniter / Django</h6>
-            <p><small><strong>Fecha</strong>: 01/08/2017</small></p>
-            <p><small><strong>Puedes verlo en</strong>: <a href="http://macasa.mx" target="_blank">macasa.mx</a></small></p>
-            <p>Macasa es un catálogo de materiales para la construcción, para su administración se elaboró un backend en Django personalizado cumpliendo con los requisitos solicitados por la empresa.</p>
+        <article class="project">
+            <h3 class="project-title">Macasa</h3>
+            <h6 class="project-course">Codeigniter / Django</h6>
+            <p class="project-date"><small><strong>Fecha</strong>: 01/08/2017</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en</strong>: <a href="http://macasa.mx" target="_blank">macasa.mx</a></small></p>
+            <p class="project-description">Macasa es un catálogo de materiales para la construcción, para su administración se elaboró un backend en Django personalizado cumpliendo con los requisitos solicitados por la empresa.</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="./images/proyectos/macasa.png" alt="Macasa">
+            </figure>
         </article>
-        <article>
-            <h3>TVP (tvpacifico.mx)</h3>
-            <h6>Laravel</h6>
-            <p><small><strong>Fecha</strong>: 11/12/2017</small></p>
-            <p><small><strong>Puedes verlo en</strong>: <a href="https://tvpacifico.mx" target="_blank">tvpacifico.mx</a></small></p>
-            <p>TVP es el resultado de meses de trabajo y con mejoras eventuales cada mes, para ofrecer un portal web con el mejor contenido de la televisora local #1 del noroeste de México, con las noticias más relevantes, exquisítas recetas de cocina con el toque 100% sinaloense y un extenso catálogo de programas televisivos que destacan en la región.</p>
+        <article class="project">
+            <h3 class="project-title">TVP (tvpacifico.mx)</h3>
+            <h6 class="project-course">Laravel</h6>
+            <p class="project-date"><small><strong>Fecha</strong>: 11/12/2017</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en</strong>: <a href="https://tvpacifico.mx" target="_blank">tvpacifico.mx</a></small></p>
+            <p class="project-description">TVP es el resultado de meses de trabajo y con mejoras eventuales cada mes, para ofrecer un portal web con el mejor contenido de la televisora local #1 del noroeste de México, con las noticias más relevantes, exquisítas recetas de cocina con el toque 100% sinaloense y un extenso catálogo de programas televisivos que destacan en la región.</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="./images/proyectos/tvpacifico.png" alt="TVP">
+            </figure>
         </article>
-        <article>
-            <h3>La Urbe</h3>
-            <h6>OctoberCMS / Laravel</h6>
-            <p><small><strong>Fecha</strong>: 25/04/2018</small></p>
-            <p><small><strong>Puedes verlo en</strong>: <a href="https://laurbe.mx" target="_blank">laurbe.mx</a></small></p>
-            <p>La Urbe es un blog de estilo urbano que surge como una vertical de TVP, donde los colaboradores pueden escribir y documentar experiencias de la forma de vivir de las personas. Su enfoque es así contar historias frescas y sobre lo que nos rodea en la comunidad. Con videodocumentales, donde el arte, el urbanismo, estilos de vida, anécdotas son compartidas.</p>
+        <article class="project">
+            <h3 class="project-title">La Urbe</h3>
+            <h6 class="project-course">OctoberCMS / Laravel</h6>
+            <p class="project-date"><small><strong>Fecha</strong>: 25/04/2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en</strong>: <a href="https://laurbe.mx" target="_blank">laurbe.mx</a></small></p>
+            <p class="project-description">La Urbe es un blog de estilo urbano que surge como una vertical de TVP, donde los colaboradores pueden escribir y documentar experiencias de la forma de vivir de las personas. Su enfoque es así contar historias frescas y sobre lo que nos rodea en la comunidad. Con videodocumentales, donde el arte, el urbanismo, estilos de vida, anécdotas son compartidas.</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="./images/proyectos/laurbe.png" alt="La Urbe">
+            </figure>
         </article>
-        <article>
-            <h3>Mueblemax</h3>
-            <h6>OctoberCMS / Laravel</h6>
-            <p><small><strong>Fecha</strong>: 03/08/2018</small></p>
-            <p><small><strong>Puedes verlo en</strong>: <a href="http://mueblemax.com" target="_blank">mueblemax.com</a></small></p>
-            <p>Mueblemax es el resultado de 3 meses de trabajo, logrando crear un catálogo en línea de los productos ofertados por la empresa. El sitio cuenta con preparación de crear una tienda en línea a futuro, como próxima actualización.</p>
+        <article class="project">
+            <h3 class="project-title">Mueblemax</h3>
+            <h6 class="project-course">OctoberCMS / Laravel</h6>
+            <p class="project-date"><small><strong>Fecha</strong>: 03/08/2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en</strong>: <a href="http://mueblemax.com" target="_blank">mueblemax.com</a></small></p>
+            <p class="project-description">Mueblemax es el resultado de 3 meses de trabajo, logrando crear un catálogo en línea de los productos ofertados por la empresa. El sitio cuenta con preparación de crear una tienda en línea a futuro, como próxima actualización.</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="./images/proyectos/mueblemax.png" alt="Mueblemax">
+            </figure>
         </article>
     </section>
-    <section id="experiencia">
+    <section id="eventos">
         <h2>Más sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="" alt="" />
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="./images/eventos/onoff-2017.jpg" alt="On/Off 2017 - Liderazgo Disruptivo" />
             </figure>
-            <h3>On/Off 2017 - Liderazgo Disruptivo</h3>
-            <p>Conferencias organizadas por Períodico Noroeste y Starch, como conferencia principal a cargo de Randi Zuckerberg, creadora del concepto Facebook Live, de la red social de Facebook. Titulada "Dot Complicated: What I learned on the front lines of social media".</p>
+            <h3 class="event-title">On/Off 2017 - Liderazgo Disruptivo</h3>
+            <p class="event-description">Conferencias organizadas por Períodico Noroeste y Starch, como conferencia principal a cargo de Randi Zuckerberg, creadora del concepto Facebook Live, de la red social de Facebook. Titulada "Dot Complicated: What I learned on the front lines of social media".</p>
         </article>
-        <article>
-            <figure>
-                <img src="" alt="" />
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="./images/eventos/google-adwords-workshop.jpg" alt="Google Adwords Workshop" />
             </figure>
-            <h3>Google Adwords Workshop 2016</h3>
-            <p>Workshop para la creación efectiva de campañas de Adwors de Google, impartida por Santinos Social Media Center.</p>
+            <h3 class="event-title">Google Adwords Workshop 2016</h3>
+            <p class="event-description">Workshop para la creación efectiva de campañas de Adwors de Google, impartida por Santinos Social Media Center.</p>
         </article>
     </section>
-    <section id="contacto">
-        <h2>¿Creamos algo juntos?</h2>
-        <form action="/subscripcion" method="POST">
+    <section id="contacto" class="contacto">
+        <form action="/subscripcion" method="POST" class="form-subscription">
+            <h3>¿Creamos algo juntos?</h3>
             <input type="email" name="email" placeholder="Déjame tu email" />
             <button type="submit">Enviar</button>
         </form>
     </section>
-    <footer>
+    <footer class="footer">
         Erick Pérez
     </footer>
 </body>
