@@ -132,6 +132,7 @@ figure {
 .contacto h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 25px;
+  line-height: 32px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0px;
@@ -422,8 +423,8 @@ figure {
   margin-bottom: 10px;
 }
 
-#portafolio, #eventos
-{
+.portfolio, 
+.eventos {
   border-left: 25px solid #026fff;
 }
 
@@ -479,11 +480,7 @@ figure {
     line-height: 1em;
   }
   .contacto h3 {
-    font-size: 1.2em;
-  }
-  .contacto .heading::after {
-    width: 1em;
-    height: 1.5em;
+    line-height: 22px;
   }
   .footer {
     padding: 0 25px;
@@ -503,16 +500,39 @@ figure {
     bottom: 0;
     width: 100%;
   }
+  .portfolio, 
+  .eventos,
+  .contacto .heading {
+    border-left-width: 20px;
+  }
   .portfolio h2::before,
   .eventos h2::before {
-    width: .8em;
-    height: 1em;
+    width: .6em;
+    height: .9em;
+    margin-left: 20px;
+  }
+  .contacto .heading::after {
+    width: .9em;
+    height: 1.35em;
+    margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
   h2 {
     font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  .contacto h3 {
+    font-size: 1.2em;
+    line-height: .75em;
+  }
+  .contacto .heading {
+    padding-top: 20px;
+  }
+  .contacto .heading::after {
+    width: .6em;
+    height: .9em;
   }
   .burger-button {
     display: block;
@@ -545,7 +565,7 @@ figure {
     text-align: center;
   }
   .menu {
-    background-color: rgba(2, 111, 255, 0.8);
+    background-color: rgba(2, 111, 255, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -559,6 +579,16 @@ figure {
   }
   .menu.is-active{
     left: 0;
+  }
+  .portfolio, 
+  .eventos,
+  .contacto .heading {
+    border-left-width: 10px;
+  }
+  .portfolio h2::before,
+  .eventos h2::before,
+  .contacto .heading::after {
+    margin-left: 10px;
   }
   .project {
     display: block;
@@ -593,7 +623,7 @@ figure {
     font-size: 1em;
   }
   .project-description {
-    font-size: .8em;
+    font-size: 1em;
     margin: .3em 0;
   }
 }
@@ -629,7 +659,7 @@ figure {
     border: 1px solid transparent;
   }
   .project-details {
-    font-size: 12px;
+    font-size: 14px;
   }
   .social {
     margin: 20px auto 0;
